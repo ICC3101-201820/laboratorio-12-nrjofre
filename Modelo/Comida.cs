@@ -20,12 +20,8 @@ namespace Modelo
             proteinas = e;
             grasas = g;
             carbohidratos = c;
-        }
-        public void CaluclarCalorias()
-        {
             calorias = 4 * Convert.ToInt32(carbohidratos) + 4 * Convert.ToInt32(proteinas) + 9 * Convert.ToInt32(grasas);
         }
-
         public override string ToString()
         {
             return $"{nombre} (carbohidratos: {carbohidratos}, proteinas: {proteinas}, grasas: {grasas}, calorias: {calorias})";

@@ -38,7 +38,6 @@ namespace MVC
         public void AgregarComida(Comida comida)
         {
             ComidasList.Items.Add(comida);
-            comida.CaluclarCalorias();
         }
 
         private void proteinaslabel_Click(object sender, EventArgs e)
@@ -69,9 +68,20 @@ namespace MVC
         private void EliminarBtn_Click(Comida comida)
         {
             ComidasList.Items.Remove(comida);
+            ComidasList.Items.Remove(ComidasList.SelectedIndex);
         }
 
         private void EliminarBtn_Click(object sender, EventArgs e)
+        {
+            ComidasList.Items.Remove(ComidasList.SelectedIndex);
+        }
+
+        private void proteinasTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nombreTextBox_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -50,6 +50,7 @@
             this.nombreTextBox.Name = "nombreTextBox";
             this.nombreTextBox.Size = new System.Drawing.Size(100, 20);
             this.nombreTextBox.TabIndex = 0;
+            this.nombreTextBox.TextChanged += new System.EventHandler(this.nombreTextBox_TextChanged);
             // 
             // proteinasTextBox
             // 
@@ -57,6 +58,7 @@
             this.proteinasTextBox.Name = "proteinasTextBox";
             this.proteinasTextBox.Size = new System.Drawing.Size(100, 20);
             this.proteinasTextBox.TabIndex = 1;
+            this.proteinasTextBox.TextChanged += new System.EventHandler(this.proteinasTextBox_TextChanged);
             // 
             // nombreLabel
             // 
